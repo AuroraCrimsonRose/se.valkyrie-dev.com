@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Valkyrie Development Server Info" />
+	<meta property="og:description" content="Val Dev Space Engineers information and landing page." />
+	<meta property="og:image" content="https://se.valkyrie-dev.com/logo.png" />
+    <title>Valkyrie Development</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+		@font-face {
+		  font-family: 'Raleway Light';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Raleway-Light'), url('/fonts/Raleway-Light.ttf') format('truetype');
+		}
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #FFFFFF; /* White text */
+            margin: 0;
+            padding: 0;
+			backdrop-filter: blur(7px);
+        }
+        .container {
+            margin-top: 20px;
+            min-height: 100vh; /* Ensures the footer is at the bottom of the page */
+        }
+        h1 {
+            color: #FFFFFF; /* Light blue heading */
+			font-family: 'Raleway Light', Raleway-Light;
+        }
+		h2 {
+            color: #FFFFFF; /* Light blue heading */
+			font-family: 'Raleway Light', Raleway-Light;
+        }
+		h3 {
+            color: #FFFFFF; /* Light blue heading */
+			font-family: 'Raleway Light', Raleway-Light;
+        }
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #1E1E1E; /* Slightly lighter than body */
+			height: 50px;
+        }
+        .footer {
+            background-color: #1E1E1E;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Card styles */
+        .card {
+            background-color: #1E1E1E; /* Slightly lighter than body */
+            color: #FFFFFF;
+            margin-bottom: 20px;
+			opacity: 0.9;
+			border-radius: 15px;
+        }
+		.bold-text {
+			font-weight: bold;
+			color: #00FFFF; /* You can set the color as needed */
+		}
+		.dang-text {
+			font-weight: bold;
+			color: #EC3058; /* You can set the color as needed */
+		}
+		.warn-text {
+			font-weight: bold;
+			color: #FFA500; /* You can set the color as needed */
+		}
+		.good-text {
+			font-weight: bold;
+			color: #00FF00; /* You can set the color as needed */
+		}
+		.impo-text {
+			font-weight: bold;
+			color: #49FFC4; /* You can set the color as needed */
+		}
+		.gps-text {
+			font-weight: bold;
+			color: #008080; /* You can set the color as needed */
+		}
+		.logo {
+			border-radius: 50%;
+			overflow: hidden;
+			margin-top: -6px;
+		}
+		.btn-show-more {
+			 /* You can adjust the color and border width as needed */
+		}
+		.planet {
+			font-size: 22px;
+			color: #00FFFF;
+			font-family: 'Raleway Light', Raleway-Light;
+		}
+		.gradient-custom {
+			/* fallback for old browsers */
+			background: #1E1E1E;
+		  
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: -webkit-linear-gradient(to top, rgba(255,255,255,0), rgba(30,30,30,255));
+		  
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background: linear-gradient(to top, rgba(255,255,255,0), rgba(30,30,30,255))
+		}
+		.gradient-customtwo {
+			/* fallback for old browsers */
+			background: #1E1E1E;
+		  
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: -webkit-linear-gradient(to top, rgba(30,30,30,255) , rgba(255,255,255,0));
+		  
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background: linear-gradient(to top, rgba(30,30,30,255) , rgba(255,255,255,0))
+		}
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-fixed-top sticky-top navbar-dark gradient-custom">
+        <div class="logo"><a class="navbar-brand" href="https://www.valkyrie-dev.com/" class="pull-left"><img src="https://se.valkyrie-dev.com/logo.png" width="46" height="46"></a></div>
+		<a class="navbar-brand" href="https://discord.gg/KRK2KVXU" style="margin-top: 5px;"><p><b>Discord</b></p></a>
+    </nav>
+
+    <div class="container">
+		<div class="title-top" style="font-family: 'Raleway Light', Raleway-Light;">
+        <h2>Valkyrie Development</h2>
+		<h3>Space Engineers</h3>
+		</div>
+		
+		<div class="card">
+            <div class="card-header">
+                <h2>Rules</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+					<li><b><span class="bold-text">PvP:</span></b> Engage in fair combat, avoid exploiting.</li>
+					<br>
+					<li><b><span class="bold-text">Admin Respect:</span></b> Treat admins with respect, follow their instructions, and report issues calmly.</li>
+					<br>
+					<li><b><span class="bold-text">Safe Zones:</span></b> Adhere to designated safe zones, Don't camp outside of them, respect boundaries, and avoid initiating combat within them.</li>
+					<br>
+					<li><b><span class="bold-text">Feedback and Improvement:</span></b> Provide constructive feedback to enhance the gaming experience and encourage collaboration in rule adjustments.</li>
+				</ol>
+            </div>
+        </div>
+		
+        <div class="card">
+            <div class="card-header">
+                <h2>Connection Info</h2>
+            </div>
+			<div class="card-body">
+                <p><span class="bold-text"><b>Hostname:</b></span> 74.114.6.106:27016</p>
+				<div id="playerCount"></div>
+            </div>
+        </div>
+		
+        <div class="card">
+            <div class="card-header">
+                <h2>Planets & Info</h2>
+            </div>
+            <div class="card-body">
+                <ul  class="collapse" id="planetDetails">
+					<li><span class="bold-text planet">Pyke</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="pykeDetails">
+						<li>Gravity: <span class="warn-text">1.42G</span></li>
+						<li>Oxygen: 50%</li>
+						<li>Climate: Ashy, hellish</li>
+						<li>Temperature: 70c to 165c</li>
+						<li>Atmosphere density: 150%</li>
+						<li>Average wind speed: 75% of Earthlike</li>
+						<li>Lifeforms: None</li>
+						<li>Ore below ground: Iron, Nickel, Cobalt, Silicon, Magnesium, Silver, abundant Gold and Uranium</li>
+						<li>Size: 120Km</li>
+						<li>Notes: Ice-rocks can't survive on or near lava. They're most likely to be found in the plains.  Ice-rocks can't survive on or near lava. They're most likely to be found in the plains.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#pykeDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Seren</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="serenDetails">
+						<li>Gravity:<span class="dang-text"> 2.80G</span></li>
+						<li>Oxygen: 5%</li>
+						<li>Climate: Windy, with some Methane Snow</li>
+						<li>Temperature: -250c to 8200c </li>
+						<li>Atmosphere density: 70%</li>
+						<li>Lifeforms: None</li>
+						<li>Ore below ground: <span class="warn-text">None</span></li>
+						<li>Size: 120Km</li>
+						<li>Notes: Extreme gravity enter at your own rick. Extremely cold to hellish, depending on altitude.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#serenDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Aulden</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="auldenDetails">
+						<li>Gravity: 0.82G</li>
+						<li>Oxygen: 30%</li>
+						<li>Climate: Rainy, and Windy, with some Snow</li>
+						<li>Temperature: -60c to 12c</li>
+						<li>Atmosphere density: 120%</li>
+						<li>Lifeforms: Plant Life, Insects, Birds</li>
+						<li>Ore below ground: Ice, Iron, Nickel, Silicon, Cobalt, Magnesium, Uranium</li>
+						<li>Size: 40Km</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#auldenDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Saprimentas</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="saprimentasDetails">
+						<li>Gravity: 0.96G</li>
+						<li>Oxygen: 80%</li>
+						<li>Climate: Hot, Dusty</li>
+						<li>Temperature: 30c to 65c</li>
+						<li>Atmosphere density: 150%</li>
+						<li>Average wind speed: 75% of Earthlike</li>
+						<li>Lifeforms: Plant Life, Insects</li>
+						<li>Ore below ground: Ice, Iron, Nickel, Cobalt, Silicon, Magnesium, Silver, abundant Gold</li>
+						<li>Size: 60Km</li>
+						<li>Notes: Visual studies have confirmed extensive savannah-like plant-life at the poles. Subsurface ice has been located beneath the poles and salt-flats, and at the bottom of extinct rivers.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#saprimentasDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Orlunda</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="orlundaDetails">
+						<li>Gravity:<span class="warn-text"> 1.12G</span></li>
+						<li>Oxygen: 70%</li>
+						<li>Climate: Earthlike</li>
+						<li>Temperature: Earthlike</li>
+						<li>Atmosphere density: 90%</li>
+						<li>Average wind speed: Earthlike</li>
+						<li>Lifeforms: Unknown</li>
+						<li>Ore below ground: All</li>
+						<li>Size: 120Km</li>
+						<li>Notes: The planet is divided into three zones, green, red and white, according to the color of the terrain. They all have different ores.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#orlundaDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Gypsum</span></li>
+					<br>
+					<div>
+					<ul class="collapse" id="gypsumDetails">
+						<li>Gravity: <span class="warn-text">1.10G</span></li>
+						<li>Oxygen: 10%</li>
+						<li>Climate: Cold, Freezing</li>
+						<li>Temperature: -70c to -0c</li>
+						<li>Atmosphere density: 130%</li>
+						<li>Lifeforms: Sabiroids, Insects, Birds, Plants</li>
+						<li>Ore below ground: Cobalt, Gold, Ice, Iron, Magnesium, Nickel, Platinum, Silicon, Silver, Uranium</li>
+						<li>Size: 120Km</li>
+						<li>Notes: This is Alien in spawn menu.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#gypsumDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Nyx</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="nyxDetails">
+						<li>Gravity: 0.25G</li>
+						<li>Oxygen: 0%</li>
+						<li>Climate: Freezing and Icy</li>
+						<li>Temperature: -200c to -60c</li>
+						<li>Atmosphere density: 30%</li>
+						<li>Lifeforms: ?</li>
+						<li>Ore below ground: Ice... who figured, Iron, Cobalt, Gold, Magnesium, Nickel, Platinum, Silicon, Silver, Uranium</li>
+						<li>Size: 30Km</li>
+						<li>Notes: This is Europa in spawn menu.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#nyxDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Jouton</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="joutonDetails">
+						<li>Gravity: <span class="warn-text">1.20G</span></li>
+						<li>Oxygen: 40%</li>
+						<li>Climate: Cold, Warm, Inferno</li>
+						<li>Temperature: -60c to 1700c</li>
+						<li>Atmosphere density: ?%</li>
+						<li>Lifeforms: ?</li>
+						<li>Ore below ground: Cobalt, Gold, Iron, Magnesium, Nickel, Platinum, Silicon, Silver, Uranium</li>
+						<li>Size: 30Km</li>
+						<li>Notes: This is Pertam in spawn menu.</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#joutonDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Hyphen</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="hyphenDetails">
+						<li>Gravity: 0.25G</li>
+						<li>Oxygen: 0%</li>
+						<li>Climate: Dusty, Cold</li>
+						<li>Temperature: -60c to 10c</li>
+						<li>Atmosphere density: 110%</li>
+						<li>Lifeforms: Sabiroids</li>
+						<li>Ore below ground: Ice, Cobalt, Gold, Iron, Magnesium, Nickel, Platinum, Silicon, Silver</li>
+						<li>Size: 30Km</li>
+						<li>Notes: This is Titan in spawn menu</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#hyphenDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+					<li><span class="bold-text planet">Hermes</span></li>
+					<div>
+					<br>
+					<ul class="collapse" id="hermesDetails">
+						<li>Gravity: 1.00G</li>
+						<li>Oxygen: 70-100%</li>
+						<li>Climate: Freezing and Icy</li>
+						<li>Temperature: -10c to -300c</li>
+						<li>Atmosphere density: ?%</li>
+						<li>Lifeforms: ?</li>
+						<li>Ore below ground: Iron, Nickel, Silicon, Gold, Magnesium, Cobalt, Silver</li>
+						<li>Size: 30Km</li>
+						<li>Notes: This is Triton in spawn menu</li>
+					<ul>
+					</div>
+					<br>
+					<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#hermesDetails" aria-expanded="false" aria-controls="pykeDetails">
+						Show
+					</button>
+					<hr>
+				</ul>
+				<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#planetDetails" aria-expanded="false" aria-controls="pykeDetails">
+					Show Planets
+				</button>
+            </div>
+        </div>
+		
+
+        <!-- Card for Additional Notes -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Cords</h2>
+            </div>
+            <div class="card-body">
+				<p>These are colored by starting Difficulty. <span class="good-text"> Easy </span>,<span class="warn-text"> Moderate </span>,<span class="dang-text"> Hard </span>,<span class="impo-text"> Impossible</span>.</p>
+				<p>These can be copy, and pasted into in-game chat.</p>
+                <ul class="collapse" id="cordsDetails">
+					<li><span class="gps-text">GPS</span>:<span class="good-text">Hermes</span>:9520682.42:7140411.88:-4417326.02:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="warn-text">Gypsum</span>:8078094.2:5959936.79:-4519327.44:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="good-text">Aulden</span>:2140378.04:852656.28:331778.8:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="dang-text">Pyke</span>:-486702.16:-183144.52:-87575.78:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="good-text">Orlunda</span>:8620167.44:-5712852.63:-561601.04:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="dang-text">Jouton</span>:695181.53:6458171.3:809889.41:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="dang-text">Nyx</span>:1030283.9:4854306.04:660694.28:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="good-text">Saprimentas</span>:11841740.78:5376964.42:1007589.71:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="impo-text">Seren</span>:6031921.73:2631102.89:524902.54:#FFFFFFFF:</li>
+					<hr>
+					<li><span class="gps-text">GPS</span>:<span class="dang-text">Hyphen</span>:3926882.82:3265913.6:4555875.23:#FFFFFFFF:</li>
+				</ul>
+				<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#cordsDetails" aria-expanded="false" aria-controls="pykeDetails">
+					Show
+				</button>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header">
+                <h2>Factions</h2>
+            </div>
+            <div class="card-body">
+				<p>Coded by Hostility, <span class="good-text">Green</span> meaning not unless attacked, <span class="warn-text">Orange</span> if you get close, <span class="dang-text">Red</span> always hostile.
+				<br>
+				<p><span class="dang-text">Dangerous Factions</span></p>
+                <ul class="collapse" id="dangfDetails">
+					<li><b><span class="dang-text">Space Pirate | SPRT </span></b>I honestly dont know what you we're expecting.</li>
+					<li><b><span class="dang-text">Spiders | SPDR </span></b>If not fren, why fren shaped?</li>
+					<li><b><span class="dang-text">The Scrap Void | SCRP </span></b>Highly Agressive.</li>
+					<li><b><span class="dang-text">Wrecks | WRECK </span></b>Abandoned wrecks defense systems, shoot on sight.</li>
+					<li><b><span class="dang-text">Reavers | REAVE </span></b>Activly hunt you out, Can see beacons be careful.</li>
+					<li><b><span class="dang-text">Qi Asset Recovery Company | QARC </span></b>Guns for hire from specific company, will shoot on sight especially to protect assets.</li>
+					<li><b><span class="dang-text">Parallax Concepts | PARAL </span></b>Warship manufacturer, attacks on sight</li>
+					<li><b><span class="dang-text">Independant Contractors | INCON </span></b>Another gun for hire, usually when you start pissing off engineering companys.</li>
+					<li><b><span class="dang-text">Imber Corporation | IMBER </span></b>Unknown why, probably something shady but they shoot on sight.</li>
+					<!--<li></li>-->
+				</ul>
+				<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#dangfDetails" aria-expanded="false" aria-controls="pykeDetails">
+					Show
+				</button>
+				<hr>
+				<p><span class="warn-text">Neutral Factions</span></p>
+				<ul class="collapse" id="warnfDetails">
+					<li><b><span class="warn-text">Pravda | PRAVD </span></b>Shady ship manufacturer, they don't want you to see what they are making. Recommend avoiding.</li>
+					<li><b><span class="warn-text">Terran Heavy Industries | THIE </span></b>Shady ship manufacturer, they don't want you to see what they are making. Recommend avoiding.</li>
+					<li><b><span class="warn-text">Trade Operators Coalition | TRADE </span></b>Collective of many Trade Federations, they will shoot if you get too close.</li>
+					<li><b><span class="warn-text">All factions with [AiE] | Tags </span></b>AiEnabled factions, usualy Neutral from my inital research.</li>
+				</ul>
+				<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#warnfDetails" aria-expanded="false" aria-controls="pykeDetails">
+					Show
+				</button>
+				<hr>
+				<p><span class="good-text">Friendly Factions</span></p>
+				<ul class="collapse" id="goodfDetails">
+					<li><b><span class="good-text">Revolutionary Industry | RVIN </span></b>Industrial grade ship manufacturer, dabble in trading.</li>
+					<li><b><span class="good-text">Revolutionary Alliance | RVAL </span></b>Industrial grade tool manufacturer, also sell's Fuel, Oxygen, and supplies Contracts.</li>
+					<li><b><span class="good-text">First Class Constructors | FCCS </span></b>High end ship manufacturer.</li>
+					<li><b><span class="good-text">First Class Technologies | FCTC </span></b>High end manufacturer of Tools, Components, Fuel, at a decent offer.</li>
+					<li><b><span class="good-text">Galactic Conglomerate | GCCM </span></b>Galactic Trade Conglomerate.</li>
+					<li><b><span class="good-text">Galactic Constructors | GCCS </span></b>Galactic ship manufacturer.</li>
+					<li><b><span class="good-text">Mystic Miners Guild | MTMG </span></b>Industrial Equipment, Ores, Gases at reasonable prices.</li>
+					<li><b><span class="good-text">Sacred Drillers | SADR </span></b>Trader of all raw materials.</li>
+					<li><b><span class="good-text">Sacred Shipbuilders | SASB </span></b>Reliable, Durable, Shipbilder.</li>
+					<li><b><span class="good-text">Secret Alliance | SCAL </span></b>Contracts, Durable Components, Fuel, and Oxygen.</li>
+					<li><b><span class="good-text">Specialized Artisans | SPAT </span></b>Finest ships money can buy.</li>
+					<li><b><span class="good-text">Star Drilling Consortium | STDC </span></b>Industrial Drilling and Mining Components.</li>
+					<li><b><span class="good-text">Supreme Excavators | SMEX </span></b>Ore and Gas trader.</li>
+					<li><b><span class="good-text">The First Prospectors | TFPR </span></b>Trader of all raw materials.</li>
+					<li><b><span class="good-text">Unyielding Prospectors | UDPR </span></b>Raw Material trader.</li>
+				</ul>
+				<button class="btn btn-outline-info" style="" type="button" data-toggle="collapse" data-target="#goodfDetails" aria-expanded="false" aria-controls="pykeDetails">
+					Show
+				</button>
+            </div>
+        </div>
+		
+    </div>
+
+    <!-- Footer -->
+	<div class="footer gradient-customtwo">
+        &copy; 2023 Valkyrie Development | Designed with love by Aurora
+    </div>
+</body>
+    <!-- Add Bootstrap and other scripts if needed -->
+	<script>
+		// Function to fetch and display the player count
+		function updatePlayerCount() {
+			var playerCountElement = document.getElementById("playerCount");
+
+			// Make an AJAX request to your PHP script
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var playerCount = xmlhttp.responseText;
+					playerCountElement.textContent = "Player Count: " + playerCount;
+				} else if (xmlhttp.status != 200) {
+					playerCountElement.textContent = "Unable to fetch player count.";
+				}
+			};
+
+			xmlhttp.open("GET", "playerCount.php", true);
+			xmlhttp.send();
+		}
+
+		// Call the function to update the player count when the page loads
+		window.onload = function() {
+			updatePlayerCount();
+		};
+	</script>
+</html>
