@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Raleway Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway-Light"),
+    url("./assets/fonts/Raleway-Light.ttf") format("truetype");
+}
+main{
+  width: 100%;
+
+}
+body {
+  background-image: url("./assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(7px);
+  text-align: center;
+}
+.container {
+  margin-top: 20px;
+  min-height: 100vh; /* Ensures the footer is at the bottom of the page */
+}
+.title-top {
+  margin: 95px 0;
+}
+.title-top > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #d7d7d7;
+}
+.title-top > h2 {
+  padding-top: 10px;
+  font-size: 3rem;
+  color: #b9b9b9;
+}
+h1 {
+  color: #ffffff; /* Light blue heading */
+  font-family: "Raleway Light", Raleway-Light;
+}
+h2 {
+  color: #ffffff; /* Light blue heading */
+  font-family: "Raleway Light", Raleway-Light;
+}
+h3 {
+  color: #989898; /* Light blue heading */
+  font-family: "Raleway Light", Raleway-Light;
+}
+/* Navigation bar styles */
+.navbar {
+  background-color: #1e1e1e; /* Slightly lighter than body */
+  height: 65px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+}
+
+img {
+  margin-bottom: 9px;
+}
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+/* Card styles */
+.card {
+  background-color: #1e1e1e; /* Slightly lighter than body */
+  color: #ffffff;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+.card-body > button {
+  width: 250px;
+  margin: 40px;
+}
+.card-header {
+  padding-top: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.card-rules {
+  text-align: left;
+}
+#planetDetails {
+  text-align: left;
+}
+#planetDetails > li {
+  text-align: center;
+}
+#planetDetails button {
+  width: 150px;
+  margin-left: calc(50% - 75px);
+  margin-bottom: 20px;
+}
+.cord-header{
+  margin: 10px 0 50px 0;
+  font-size: 18px;
+}
+#cordsDetails{
+  list-style: none;
+}
+
+#dangfDetails,
+#warnfDetails,
+#goodfDetails{
+  list-style: none;
+  text-align: left;
+}
+
+#dangfDetails > li,
+#warnfDetails > li,
+#goodfDetails > li{
+  margin: 20px 0;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #00ffff; /* You can set the color as needed */
+}
+.dang-text {
+  font-weight: bold;
+  color: #ec3058; /* You can set the color as needed */
+}
+.warn-text {
+  font-weight: bold;
+  color: #ffa500; /* You can set the color as needed */
+}
+.good-text {
+  font-weight: bold;
+  color: #00ff00; /* You can set the color as needed */
+}
+.impo-text {
+  font-weight: bold;
+  color: #49ffc4; /* You can set the color as needed */
+}
+.gps-text {
+  font-weight: bold;
+  color: #008080; /* You can set the color as needed */
+}
+.logo {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+.btn-show-more {
+  /* You can adjust the color and border width as needed */
+}
+.planet {
+  font-size: 22px;
+  color: #00ffff;
+  font-family: "Raleway Light", Raleway-Light;
+}
+
+#planetDetails {
+  padding: 0;
+  list-style: none;
+}
+
+#planetDetails > button {
+  margin-bottom: 1.25rem;
+}
+#planetDetails > hr {
+  background: rgba(0, 0, 0, 0.5);
+  width: 75%;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #1e1e1e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(30, 30, 30, 255)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(30, 30, 30, 0.5)
+  );
+}
+/* @media (max-width: 1250px) {
+  .title-top > h1 {
+    font-size: 5vw;
+  }
+  .title-top > h2 {
+    font-size: 3vw;
+  }
+} */
+@media (max-width: 1000px) {
+  .title-top > h1 {
+    font-size: 10vw;
+  }
+  .title-top > h2 {
+    font-size: 6vw;
+  }
+}
